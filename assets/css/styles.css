@@ -1,0 +1,1378 @@
+/* Estilos generales para el cuerpo y HTML */
+body,
+html {
+    height: 100%;
+    /* Asegura que la altura sea el 100% del viewport */
+    margin: 0;
+    /* Elimina márgenes predeterminados */
+    font-family: 'Montserrat', sans-serif;
+    /* Fuente predeterminada para el cuerpo */
+    overflow-x: hidden;
+    /* Evita el desplazamiento horizontal */
+    background-color: #f8f9fa;
+    /* Color de fondo claro para la página */
+    scroll-behavior: smooth;
+    /* Habilita el desplazamiento suave */
+}
+
+/* Estilos para el efecto de scroll-reveal */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    /* Empieza ligeramente abajo */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    /* Transición suave */
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    /* Vuelve a su posición original */
+}
+
+/* Estilos para la sección Hero */
+.hero-section {
+    position: relative;
+    /* Necesario para posicionar el overlay y el contenido */
+    height: 100vh;
+    /* Ocupa el 100% de la altura del viewport */
+    /* Ruta a la imagen de fondo. Asegúrate de que esta imagen esté en la misma carpeta. */
+    background-image: url('../imagenes/portada.jpg');
+    /* Reemplaza con la ruta correcta de tu imagen */
+    background-size: cover;
+    /* Cubre toda la sección sin distorsionar la imagen */
+    background-position: center;
+    /* Centra la imagen de fondo */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    /* Opcional: Hace que la imagen de fondo sea fija al desplazarse */
+    display: flex;
+    /* Usa flexbox para centrar el contenido */
+    flex-direction: column;
+    /* Apila los elementos verticalmente */
+    justify-content: center;
+    /* Centra el contenido verticalmente */
+    align-items: center;
+    /* Centra el contenido horizontalmente */
+    text-align: center;
+    /* Centra el texto */
+    color: white;
+    /* Color de texto predeterminado para la sección */
+    padding: 20px;
+    /* Padding general para evitar que el contenido toque los bordes */
+}
+
+/* Estilos para el overlay oscuro sobre la imagen de fondo */
+.hero-overlay {
+    position: absolute;
+    /* Posicionamiento absoluto dentro de .hero-section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Color negro con 50% de opacidad */
+    z-index: 1;
+    /* Asegura que el overlay esté debajo del contenido pero sobre la imagen */
+}
+
+/* Estilos para el contenedor del contenido (título, subtítulo, botón) */
+.hero-content {
+    position: relative;
+    /* Necesario para que z-index funcione */
+    z-index: 2;
+    /* Asegura que el contenido esté por encima del overlay */
+    max-width: 800px;
+    /* Limita el ancho del contenido para mejor legibilidad en pantallas grandes */
+    padding: 20px;
+    /* Padding interno para el contenido */
+}
+
+/* Estilos para el título principal de la sección hero */
+.hero-title {
+    font-family: 'Dancing Script', cursive;
+    /* Fuente caligráfica para el título */
+    font-size: 5rem;
+    /* Tamaño de fuente grande para el título */
+    font-weight: 700;
+    /* Negrita para el título */
+    line-height: 1.2;
+    /* Espaciado de línea */
+    margin-bottom: 15px;
+    /* Espacio debajo del título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Sombra de texto para mejor visibilidad */
+}
+
+/* Estilos para el subtítulo de la sección hero */
+.hero-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    /* Fuente sans-serif para el subtítulo */
+    font-size: 1.75rem;
+    /* Tamaño de fuente para el subtítulo */
+    font-weight: 400;
+    /* Peso de fuente normal */
+    margin-bottom: 30px;
+    /* Espacio debajo del subtítulo */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    /* Sombra de texto para mejor visibilidad */
+}
+
+/* Estilos para el botón de la sección hero */
+.hero-button {
+    background-color: #e74c3c;
+    /* Un rojo vibrante, puedes ajustarlo */
+    border-color: #e74c3c;
+    /* Borde del mismo color */
+    color: white;
+    /* Color del texto del botón */
+    padding: 15px 40px;
+    /* Padding interno del botón */
+    font-size: 1.25rem;
+    /* Tamaño de fuente del botón */
+    font-weight: 600;
+    /* Peso de fuente seminegrita */
+    border-radius: 50px;
+    /* Bordes muy redondeados para un estilo suave */
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+    /* Transiciones suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Sombra para darle profundidad */
+}
+
+.hero-button:hover {
+    background-color: #c0392b;
+    /* Color más oscuro al pasar el ratón */
+    border-color: #c0392b;
+    transform: translateY(-2px);
+    /* Pequeño efecto de levantamiento al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    /* Sombra más pronunciada al pasar el ratón */
+}
+
+/* Estilos para las secciones de contenido */
+.content-section {
+    padding: 80px 20px;
+    /* Padding superior e inferior para la sección */
+    background-color: #FDF6F0;
+    /* Fondo claro para la sección de contenido */
+}
+
+.content-section-title {
+    font-family: 'Dancing Script', cursive;
+    /* Misma fuente caligráfica para el título de la sección */
+    font-size: 3.5rem;
+    /* Tamaño de fuente para el título de la sección */
+    color: #e74c3c;
+    /* Color rojo similar al botón */
+    text-align: center;
+    /* Centra el título */
+    margin-bottom: 60px;
+    /* Espacio debajo del título */
+}
+
+.video-placeholder {
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* Relación de aspecto 16:9 (altura / ancho * 100) */
+    position: relative;
+    background-color: #000;
+    /* Fondo negro para simular video */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.video-placeholder img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.video-text-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 5;
+}
+
+.video-text-overlay.holis {
+    top: 10px;
+    right: 10px;
+    left: auto;
+}
+
+.video-bottom-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+}
+
+.video-bottom-text .trophy-icon {
+    margin-left: 8px;
+    font-size: 1.3rem;
+}
+
+.lolo-showroom {
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 5;
+}
+
+.lolo-showroom img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+    border: 1px solid white;
+}
+
+.lolo-showroom-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.lolo-showroom-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.event-date {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e74c3c;
+    margin-bottom: 5px;
+}
+
+.event-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.event-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+/* Estilos para las imágenes de las secciones de contenido */
+.event-image {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: block;
+}
+
+/* Estilos para el modal de imagen */
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: relative;
+}
+
+.modal-body img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    padding: 1rem;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+    opacity: 1;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.modal-header .btn-close:hover {
+    opacity: 0.7;
+}
+
+/* Estilo para el texto de ayuda en el modal */
+.modal-help-text {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+
+/* Estilos para la sección de meses */
+.months-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.months-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: #e74c3c;
+    margin-bottom: 40px;
+}
+
+.nav-pills .nav-link {
+    color: #6c757d;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+    color: white;
+    background-color: #e74c3c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tab-content {
+    margin-top: 40px;
+}
+
+.month-info {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la sección Mapa de Recuerdos */
+.map-section {
+    padding: 80px 20px;
+    background-color: #FDF6F0;
+    text-align: center;
+}
+
+.map-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: #e74c3c;
+    margin-bottom: 60px;
+}
+
+.memory-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.memory-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.memory-card .location-icon {
+    color: #e74c3c;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.memory-card .card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.memory-card .card-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.memory-card .card-date {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #e74c3c;
+    margin-top: auto;
+    text-align: start;
+}
+
+/* Estilos para la sección de Datos Curiosos (Carrusel) */
+.curious-facts-section {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.curious-facts-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: #e74c3c;
+    margin-bottom: 60px;
+}
+
+/* Contenedor del nuevo carrusel */
+.custom-carousel-container {
+    position: relative;
+    max-width: 700px;
+    /* Ancho fijo para la simetría */
+    margin: 0 auto;
+    /* Centrar el carrusel */
+
+    /* Fondo blanco para la tarjeta */
+    border-radius: 15px;
+
+    padding: 20px;
+    /* Espacio interno para el efecto de "marco" blanco */
+    min-height: 250px;
+    /* Altura mínima para el contenido */
+    display: flex;
+    /* Para centrar el contenido del slide */
+    align-items: center;
+    /* Centrar verticalmente */
+    justify-content: center;
+    /* Centrar horizontalmente */
+}
+
+/* Estilos del carrusel interno */
+.custom-carousel-inner {
+    width: 100%;
+    /* Ocupa el 100% del padding-box del contenedor */
+    overflow: hidden;
+    /* Asegura que el contenido no se desborde */
+    border-radius: 15px;
+    /* Bordes redondeados para el contenido interno */
+}
+
+.custom-carousel-item {
+    background-color: #ff6b6b;
+    /* Color rosa vibrante para el fondo del item */
+    color: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+    min-height: 180px;
+    /* Altura mínima para el contenido */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    /* Asegura que el texto esté centrado */
+    white-space: normal;
+    /* Permite que el texto se ajuste a varias líneas */
+}
+
+/* Estilos para los controles de navegación del carrusel (flechas) */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    /* Ancho del botón */
+    height: 40px;
+    /* Altura del botón */
+    background-color: white;
+    /* Fondo blanco */
+    border: 1px solid #e74c3c;
+    /* Borde rojo */
+    border-radius: 10px;
+    /* Circular */
+    opacity: 1;
+    /* Siempre visible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+}
+
+.carousel-control-prev {
+    left: -25px;
+    /* Posición fuera del contenedor para el efecto visual */
+}
+
+.carousel-control-next {
+    right: -25px;
+    /* Posición fuera del contenedor para el efecto visual */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #e74c3c;
+    /* Fondo rojo al pasar el ratón */
+    border-color: #e74c3c;
+    transform: translateY(-50%) scale(1.05);
+    /* Ligeramente más grande al pasar el ratón */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+    /* Elimina la imagen de flecha predeterminada de Bootstrap */
+    width: auto;
+    /* Ajuste automático del ancho del ícono */
+    height: auto;
+    /* Ajuste automático de la altura del ícono */
+    display: flex;
+    /* Para centrar el ícono */
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon::after {
+    content: '\f104';
+    /* Código de Font Awesome para flecha izquierda */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 2rem;
+    /* Tamaño de la flecha */
+    color: #e74c3c;
+    /* Color rojo */
+    line-height: 1;
+    /* Ayuda a la alineación vertical */
+}
+
+.carousel-control-next-icon::after {
+    content: '\f105';
+    /* Código de Font Awesome para flecha derecha */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 2rem;
+    /* Tamaño de la flecha */
+    color: #e74c3c;
+    /* Color rojo */
+    line-height: 1;
+    /* Ayuda a la alineación vertical */
+}
+
+/* Hover para los íconos de las flechas */
+.carousel-control-prev:hover .carousel-control-prev-icon::after,
+.carousel-control-next:hover .carousel-control-next-icon::after {
+    color: white;
+    /* Color blanco al pasar el ratón */
+}
+
+/* Estilos para los indicadores del carrusel */
+.carousel-indicators {
+    position: static;
+    /* Quita el posicionamiento absoluto */
+    margin-top: 10px;
+    /* Espacio superior */
+    margin-bottom: 0;
+    justify-content: center;
+    padding: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #d1d1d1;
+    /* Gris claro para los indicadores inactivos */
+    border-radius: 50%;
+    width: 10px;
+    /* Tamaño del indicador */
+    height: 10px;
+    /* Tamaño del indicador */
+    margin: 0 6px;
+    /* Espacio entre indicadores */
+    opacity: 1;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.carousel-indicators .active {
+    background-color: #e74c3c;
+    /* Rojo vibrante para el indicador activo */
+    opacity: 1;
+}
+
+
+/* Sección de Tiempo Juntos */
+.time-together-section {
+    padding: 80px 20px;
+    background-color: #FDF6F0;
+    text-align: center;
+}
+
+.time-together-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: #e74c3c;
+    margin-bottom: 60px;
+}
+
+.time-together-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.time-together-card .heart-icon {
+    color: #e74c3c;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.time-together-card .date-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+.time-together-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.time-together-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e74c3c;
+    line-height: 1;
+}
+
+.countdown-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.time-together-quote {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #343a40;
+    margin-top: 20px;
+}
+
+/* Sección de Objetivos */
+.objectives-section {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.objectives-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: #e74c3c;
+    margin-bottom: 60px;
+}
+
+.main-objective-card {
+    background-color: #FDF6F0;
+    border-radius: 15px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    border: none;
+    position: relative;
+}
+
+.main-objective-card .heart-icon {
+    color: #e74c3c;
+    font-size: 3rem;
+    animation: pulseHeart 2s infinite alternate ease-in-out;
+}
+
+.main-objective-card .objective-label {
+    background-color: #e74c3c;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-radius: 20px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.main-objective-card .objective-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.main-objective-card .objective-status {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.main-objective-card .objective-status .icon {
+    color: #e74c3c;
+}
+
+.objectives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.objective-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: none;
+}
+
+
+
+.objective-card.completed {
+    background-color: #F0FDF4;
+    /* No border for pending cards */
+}
+
+.objective-card .status-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.objective-card .status-icon {
+    font-size: 1.5rem;
+}
+
+.objective-card .status-icon.completed {
+    color: #28a745;
+}
+
+.objective-card .status-icon.pending {
+    color: #e74c3c;
+}
+
+.objective-card .status-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.objective-card .status-text.completed {
+    color: #28a745;
+}
+
+.objective-card .status-text.pending {
+    color: #e74c3c;
+}
+
+.objective-card .card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 8px;
+}
+
+.objective-card .card-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.objective-card .card-date-emoji {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-top: auto;
+}
+
+.objectives-quote {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #343a40;
+    margin-top: 40px;
+}
+
+/* Sección de Cartas */
+.letters-section {
+    padding: 80px 20px;
+    background-color: #FDF6F0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.letters-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.letters-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.letters-date-info {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 40px;
+}
+
+.letter-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+}
+
+.letter-card .heart-icon {
+    color: #e74c3c;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+
+.letter-card .letter-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #343a40;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.letter-card .signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #e74c3c;
+    text-align: right;
+    margin-top: 30px;
+    display: block;
+}
+
+/* Corazones pulsantes alrededor de la sección */
+.pulsating-heart {
+    position: absolute;
+    color: #e74c3c;
+    font-size: 2rem;
+    opacity: 0.3;
+    animation: pulseHeart 2s infinite alternate ease-in-out;
+    z-index: 0;
+}
+
+/* Posicionamiento de los corazones pulsantes */
+.pulsating-heart:nth-child(1) {
+    top: 5%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.pulsating-heart:nth-child(2) {
+    top: 5%;
+    right: 5%;
+    animation-delay: 0.5s;
+}
+
+.pulsating-heart:nth-child(3) {
+    bottom: 5%;
+    left: 5%;
+    animation-delay: 1s;
+}
+
+.pulsating-heart:nth-child(4) {
+    bottom: 5%;
+    right: 5%;
+    animation-delay: 1.5s;
+}
+
+/* Animación de latido */
+@keyframes pulseHeart {
+    0% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+}
+
+/* Sección de Pie de Página / Hecho Con */
+.made-with-section {
+    padding: 60px 20px;
+    background-color: #FDF6F0;
+    text-align: center;
+}
+
+.made-with-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #e74c3c;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.made-with-text .heart-icon {
+    font-size: 2.5rem;
+    color: #e74c3c;
+}
+
+.made-by-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.made-with-quote {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+
+/* Media queries para responsividad en diferentes tamaños de pantalla */
+
+/* Para pantallas pequeñas (móviles, menos de 768px) */
+@media (max-width: 767.98px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-button {
+        font-size: 1rem;
+        padding: 12px 30px;
+    }
+
+    .content-section,
+    .map-section,
+    .curious-facts-section,
+    .time-together-section,
+    .objectives-section,
+    .letters-section,
+    .made-with-section {
+        padding: 50px 15px;
+    }
+
+    .content-section-title,
+    .months-title,
+    .map-title,
+    .curious-facts-title,
+    .time-together-title,
+    .objectives-title,
+    .letters-title {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+
+    .video-placeholder {
+        margin-bottom: 30px;
+    }
+
+    .event-title {
+        font-size: 2rem;
+    }
+
+    .event-subtitle {
+        font-size: 1rem;
+    }
+
+    .nav-pills .nav-link {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .gallery-image {
+        height: 180px;
+    }
+
+    .memory-card {
+        margin-bottom: 20px;
+    }
+
+    .custom-carousel-item {
+        font-size: 1.2rem;
+        min-height: 150px;
+        padding: 30px 15px;
+    }
+
+    .custom-carousel-container {
+        max-width: 90%;
+        /* Ajusta el ancho máximo para pantallas pequeñas */
+        padding: 15px;
+        /* Ajusta el padding para pantallas pequeñas */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        
+    }
+
+    .carousel-control-prev-icon::after,
+    .carousel-control-next-icon::after {
+        font-size: 1.5rem;
+    }
+
+    .time-together-grid {
+        gap: 15px;
+    }
+
+    .countdown-number {
+        font-size: 2.5rem;
+    }
+
+    .countdown-label {
+        font-size: 0.9rem;
+    }
+
+    .time-together-quote {
+        font-size: 1.5rem;
+    }
+
+    .main-objective-card .objective-title {
+        font-size: 2rem;
+    }
+
+    .main-objective-card .objective-status {
+        font-size: 1rem;
+    }
+
+    .objectives-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .objective-card .card-title {
+        font-size: 1.2rem;
+    }
+
+    .objective-card .card-description {
+        font-size: 0.85rem;
+    }
+
+    .objectives-quote {
+        font-size: 1.5rem;
+    }
+
+    .letters-title {
+        font-size: 2.5rem;
+    }
+
+    .letters-subtitle,
+    .letters-date-info {
+        font-size: 1rem;
+    }
+
+    .letter-card .letter-content p {
+        font-size: 0.9rem;
+    }
+
+    .letter-card .signature {
+        font-size: 1.5rem;
+    }
+
+    .pulsating-heart {
+        font-size: 1.5rem;
+    }
+
+    .made-with-text {
+        font-size: 2.5rem;
+        gap: 10px;
+    }
+
+    .made-with-text .heart-icon {
+        font-size: 2rem;
+    }
+
+    .made-by-text {
+        font-size: 1rem;
+    }
+
+    .made-with-quote {
+        font-size: 0.85rem;
+    }
+}
+
+/* Para pantallas extra pequeñas (móviles muy pequeños, menos de 576px) */
+@media (max-width: 575.98px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-content {
+        padding: 15px;
+    }
+
+    .content-section-title,
+    .months-title,
+    .map-title,
+    .curious-facts-title,
+    .time-together-title,
+    .objectives-title,
+    .letters-title {
+        font-size: 2rem;
+    }
+
+    .event-title {
+        font-size: 1.8rem;
+    }
+
+    .event-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .month-info {
+        font-size: 1rem;
+    }
+
+    .gallery-image {
+        height: 150px;
+    }
+
+    .memory-card .card-title {
+        font-size: 1.3rem;
+    }
+
+    .memory-card .card-description {
+        font-size: 0.9rem;
+    }
+
+    .memory-card .card-date {
+        font-size: 0.8rem;
+    }
+
+    .custom-carousel-item {
+        font-size: 1rem;
+        min-height: 120px;
+        padding: 20px 10px;
+    }
+
+    .custom-carousel-container {
+        padding: 10px;
+        /* Ajusta el padding para pantallas muy pequeñas */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 35px;
+        height: 35px;
+    }
+
+    .carousel-control-prev-icon::after,
+    .carousel-control-next-icon::after {
+        font-size: 1.2rem;
+    }
+
+    .countdown-number {
+        font-size: 2rem;
+    }
+
+    .countdown-label {
+        font-size: 0.8rem;
+    }
+
+    .time-together-quote {
+        font-size: 1.2rem;
+    }
+
+    .main-objective-card .objective-title {
+        font-size: 1.8rem;
+    }
+
+    .main-objective-card .objective-status {
+        font-size: 0.9rem;
+    }
+
+    .objective-card .card-title {
+        font-size: 1.1rem;
+    }
+
+    .objective-card .card-description {
+        font-size: 0.8rem;
+    }
+
+    .objectives-quote {
+        font-size: 1.2rem;
+    }
+
+    .letters-title {
+        font-size: 2rem;
+    }
+
+    .letters-subtitle,
+    .letters-date-info {
+        font-size: 0.9rem;
+    }
+
+    .letter-card .letter-content p {
+        font-size: 0.85rem;
+    }
+
+    .letter-card .signature {
+        font-size: 1.2rem;
+    }
+
+    .pulsating-heart {
+        font-size: 1rem;
+    }
+
+    .made-with-text {
+        font-size: 2rem;
+        gap: 8px;
+    }
+
+    .made-with-text .heart-icon {
+        font-size: 1.8rem;
+    }
+
+    .made-by-text {
+        font-size: 0.9rem;
+    }
+
+    .made-with-quote {
+        font-size: 0.8rem;
+    }
+}

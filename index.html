@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M y B Por Siempre </title>
+    <!-- Enlace a Bootstrap CSS para el diseño responsivo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        xintegrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Enlaces a Google Fonts para las tipografías: Dancing Script (título) y Montserrat (subtítulo/botón) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome para íconos (ej. ícono de ubicación, corazón, check, círculo, reloj) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Estilos CSS directamente en el HTML -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Sección principal tipo "Hero" que ocupa toda la pantalla -->
+    <section class="hero-section d-flex flex-column justify-content-center align-items-center text-center text-white">
+        <!-- Overlay oscuro para mejorar la legibilidad del texto sobre la imagen -->
+        <div class="hero-overlay"></div>
+        <!-- Contenido principal de la sección Hero -->
+        <div class="hero-content position-relative z-1">
+            <h1 class="hero-title mb-3">Desde aquel primer encuentro hasta hoy</h1>
+            <p class="hero-subtitle mb-4">Eres mi persona favorita desde el colegio, y siempre lo serás.</p>
+            <a href="#historia" class="btn btn-primary hero-button">Nuestra Historia</a>
+
+        </div>
+    </section>
+
+    <section class="content-section" id="historia">
+        <div class="container">
+            <h2 class="content-section-title">Momentos Que Se Quedan Para Siempre</h2>
+
+            <div class="row justify-content-center align-items-center mb-5">
+                <!-- Columna izquierda para la imagen del evento -->
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                    <img src="/assets/imagenes/ecursion_juntos.jpg" class="img-fluid event-image" alt="Juntos"
+                        loading="lazy" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-bs-src="/assets/imagenes/ecursion_juntos.jpg">
+                </div>
+                <!-- Columna derecha para el texto del evento -->
+                <div class="col-12 col-md-6 text-md-start">
+                    <p class="event-date">17 de mayo de 2017</p>
+                    <h3 class="event-title">Nuestra primer excursion juntos</h3>
+                    <p class="event-subtitle">Ese día lo pasamos juntos, y desde entonces lo guardo como uno de mis
+                        recuerdos más felices.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center mb-5">
+                <!-- Columna izquierda para el texto del evento -->
+                <div class="col-12 col-md-6 text-md-start order-md-1 order-2">
+                    <p class="event-date">28 de noviembre de 2018</p>
+                    <h3 class="event-title">El primer y único “te amo” que me dijiste</h3>
+                    <p class="event-subtitle">Eran las 2 de la madrugada cuando me sorprendiste con ese mensaje… hasta
+                        hoy me pregunto si en ese instante realmente me amaste.</p>
+
+                </div>
+                <!-- Columna derecha para la imagen del evento -->
+                <div class="col-12 col-md-6 mb-4 mb-md-0 order-md-2 order-1">
+                    <img src="/assets/imagenes/PrimerTeAmo.jpg" class="img-fluid event-image" alt="Unico te amo"
+                        loading="lazy" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-bs-src="/assets/imagenes/PrimerTeAmo.jpg">
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center mb-5">
+                <!-- Columna izquierda para la imagen del evento -->
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                    <img src="/assets/imagenes/yaNoEstabas.jpg" class="img-fluid event-image" alt="Sin ti"
+                        loading="lazy" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-bs-src="/assets/imagenes/yaNoEstabas.jpg">
+                </div>
+                <!-- Columna derecha para el texto del evento -->
+                <div class="col-12 col-md-6 text-md-start ">
+                    <p class="event-date">13 de julio de 2019</p>
+                    <h3 class="event-title">La foto que me mandaste en aquel 15</h3>
+                    <p class="event-subtitle">Ese año fue el más difícil del colegio… te fuiste a la universidad y
+                        sentía que estabas lejos. Extrañaba verte, estar a tu lado… no imaginas la falta que me hiciste.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+                <!-- Columna izquierda para el texto del evento -->
+                <div class="col-12 col-md-6 text-md-start order-md-1 order-2">
+                    <p class="event-date">En los Primeros meses de 2020</p>
+                    <h3 class="event-title">La carta que me enviaste</h3>
+                    <p class="event-subtitle">La leía cada noche, y no podía evitar arrepentirme de no haber cumplido mi
+                        promesa… sentía que lo había arruinado todo. Aun así, me quedé con tus últimas palabras, y
+                        gracias a ellas no me di por vencido; me propuse ser mejor, por ti.</p>
+
+                </div>
+                <!-- Columna derecha para la imagen del evento -->
+                <div class="col-12 col-md-6 mb-4 mb-md-0 order-md-2 order-1">
+                    <img src="/assets/imagenes/carta.png" class="img-fluid event-image" alt="Carta" loading="lazy"
+                        data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="/assets/imagenes/carta.png">
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center mb-5">
+                <!-- Columna izquierda para la imagen del evento -->
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                    <img src="/assets/imagenes/pandemia.jpg" class="img-fluid event-image" alt="Pandemia" loading="lazy"
+                        data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="/assets/imagenes/pandemia.jpg">
+                </div>
+                <!-- Columna derecha para el texto del evento -->
+                <div class="col-12 col-md-6 text-md-start ">
+                    <p class="event-date">07 de noviembre de 2020</p>
+                    <h3 class="event-title">La foto que me acompañó en la pandemia</h3>
+                    <p class="event-subtitle">No sé cómo logré que me mandaras esa foto, pero la guardé como un tesoro…
+                        en esos días difíciles la veía casi todos los días para sentirte un poquito más cerca.</p>
+
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+                <!-- Columna izquierda para el texto del evento -->
+                <div class="col-12 col-md-6 text-md-start order-md-1 order-2">
+                    <p class="event-date">08 de septiembre de 2023</p>
+                    <h3 class="event-title">Cuando te hiciste base</h3>
+                    <p class="event-subtitle">Me sorprendiste con esa foto que me enviaste… te veías tan hermosa que
+                        hasta hoy la recuerdo con una sonrisa.</p>
+                </div>
+                <!-- Columna derecha para la imagen del evento -->
+                <div class="col-12 col-md-6 mb-4 mb-md-0 order-md-2 order-1">
+                    <img src="/assets/imagenes/base.jpg" class="img-fluid event-image" alt="Base" data-bs-toggle="modal"
+                        loading="lazy" data-bs-target="#imageModal" data-bs-src="/assets/imagenes/base.jpg">
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center mb-5">
+                <!-- Columna izquierda para la imagen del evento -->
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                    <img src="/assets/imagenes/reencuentro.jpg" class="img-fluid event-image" alt="reencuentro"
+                        loading="lazy" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-bs-src="/assets/imagenes/reencuentro.jpg">
+                </div>
+                <!-- Columna derecha para el texto del evento -->
+                <div class="col-12 col-md-6 text-md-start ">
+                    <p class="event-date">19 de abril de 2024</p>
+                    <h3 class="event-title">Nuestra primera salida</h3>
+                    <p class="event-subtitle">Fuimos al cine a ver una peli de terror… yo estaba nervioso, no solo por
+                        la película, sino porque hacía mucho que no te veía y me emocionaba volver a estar a tu lado.
+                    </p>
+
+
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+                <!-- Columna izquierda para el texto del evento -->
+                <div class="col-12 col-md-6 text-md-start order-md-1 order-2">
+                    <p class="event-date">09 de mayo de 2024</p>
+                    <h3 class="event-title">El día de tu feria en la U</h3>
+                    <p class="event-subtitle">Ese día fui a verte… estabas cansada, pero para mí lucías más hermosa que
+                        nunca. Fue inolvidable, porque por un instante sentí que éramos algo más que amigos 🤭.</p>
+
+                </div>
+                <!-- Columna derecha para la imagen del evento -->
+                <div class="col-12 col-md-6 mb-4 mb-md-0 order-md-2 order-1">
+                    <img src="/assets/imagenes/dia_hermoso.jpg" class="img-fluid event-image" alt="Dia Hermoso"
+                        loading="lazy" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-bs-src="/assets/imagenes/dia_hermoso.jpg">
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center mb-5">
+                <!-- Columna izquierda para la imagen del evento -->
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                    <img src="/assets/imagenes/pizza_1.jpg" class="img-fluid event-image" alt="pizza_1" loading="lazy"
+                        data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-src="/assets/imagenes/pizza_1.jpg">
+                </div>
+                <!-- Columna derecha para el texto del evento -->
+                <div class="col-12 col-md-6 text-md-start ">
+                    <p class="event-date">18 de mayo de 2024</p>
+                    <h3 class="event-title">Nuestra salida por pizza</h3>
+                    <p class="event-subtitle">Fuimos a comer pizza y después a tu congre… un día sencillo, pero muy
+                        especial.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+                <!-- Columna izquierda para el texto del evento -->
+                <div class="col-12 col-md-6 text-md-start order-md-1 order-2">
+                    <p class="event-date">25 de mayo de 2024</p>
+                    <h3 class="event-title">Otra salida contigo</h3>
+                    <p class="event-subtitle">Te encontré en Ricono, volvimos juntos en tren y al final fuimos por unas
+                        hamburguesas que saben mejor solo porque las compartí contigo ❤️.</p>
+
+
+                </div>
+                <!-- Columna derecha para la imagen del evento -->
+                <div class="col-12 col-md-6 mb-4 mb-md-0 order-md-2 order-1">
+                    <img src="/assets/imagenes/hamburguesa.jpg" class="img-fluid event-image" alt="hamburguesa"
+                        loading="lazy" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-bs-src="/assets/imagenes/hamburguesa.jpg">
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center mb-5">
+                <!-- Columna izquierda para la imagen del evento -->
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                    <img src="/assets/imagenes/trasnochada.jpg" class="img-fluid event-image" alt="trasnochada"
+                        loading="lazy" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-bs-src="/assets/imagenes/trasnochada.jpg">
+                </div>
+                <!-- Columna derecha para el texto del evento -->
+                <div class="col-12 col-md-6 text-md-start ">
+                    <p class="event-date">28 de mayo de 2024</p>
+                    <h3 class="event-title">Nos trasnochamos hablando</h3>
+                    <p class="event-subtitle">Pasamos toda la noche escribiéndonos… fue bonito, de esos momentos que se
+                        viven una sola vez y se quedan grabados para siempre 🥺.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+                <!-- Columna izquierda para el texto del evento -->
+                <div class="col-12 col-md-6 text-md-start order-md-1 order-2">
+                    <p class="event-date">15 de junio de 2025</p>
+                    <h3 class="event-title">Ultima salida que tuvimos</h3>
+                    <p class="event-subtitle">Un domingo hermoso, estar a tu lado despues de 1 año sin vernos, aun
+                        seguia un poco nervioso🤭.</p>
+
+                </div>
+                <!-- Columna derecha para la imagen del evento -->
+                <div class="col-12 col-md-6 mb-4 mb-md-0 order-md-2 order-1">
+                    <img src="/assets/imagenes/pizza_actual.jpg" class="img-fluid event-image" alt="pizza_actual"
+                        loading="lazy" data-bs-toggle="modal" data-bs-target="#imageModal"
+                        data-bs-src="/assets/imagenes/pizza_actual.jpg">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Nueva sección: Como Novios - Mes a Mes -->
+    <section class="months-section hidden">
+        <div class="container">
+            <h2 class="months-title">Recuerdos por años</h2>
+
+            <!-- Navegación de pestañas (Meses) -->
+            <ul class="nav nav-pills justify-content-center mb-4" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-mes1-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-mes1" type="button" role="tab" aria-controls="pills-mes1"
+                        aria-selected="true">Año 2017</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-mes2-tab" data-bs-toggle="pill" data-bs-target="#pills-mes2"
+                        type="button" role="tab" aria-controls="pills-mes2" aria-selected="false">Año 2019</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-mes3-tab" data-bs-toggle="pill" data-bs-target="#pills-mes3"
+                        type="button" role="tab" aria-controls="pills-mes3" aria-selected="false">Año 2020</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-mes4-tab" data-bs-toggle="pill" data-bs-target="#pills-mes4"
+                        type="button" role="tab" aria-controls="pills-mes4" aria-selected="false">Año 2023</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-mes5-tab" data-bs-toggle="pill" data-bs-target="#pills-mes5"
+                        type="button" role="tab" aria-controls="pills-mes5" aria-selected="false">Año 2024</button>
+                </li>
+                <!-- Puedes añadir más meses aquí -->
+            </ul>
+
+            <!-- Contenido de las pestañas -->
+            <div class="tab-content" id="pills-tabContent">
+                <!-- Contenido del 2017 -->
+                <div class="tab-pane fade show active" id="pills-mes1" role="tabpanel" aria-labelledby="pills-mes1-tab">
+                    <p class="month-info">Fotos del año 2017, las primeras.</p>
+                    <div class="row g-3">
+                        <!-- Galería de imágenes del año 2017 -->
+                        <div class="col-6 col-md-3">
+                            <img src="/assets/imagenes/2017/20170517_131948.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="/assets/imagenes/2017/20170517_131948.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2017/20170517_1319480.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 2" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2017/20170517_1319480.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2017/20170517_181145.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 3" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2017/20170517_181145.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2017/20170517_181222.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 4" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="/assets/imagenes/2017/20170517_181222.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2017/20170517_181358.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 5" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2017/20170517_181358.jpg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenido del 2019-->
+                <div class="tab-pane fade" id="pills-mes2" role="tabpanel" aria-labelledby="pills-mes2-tab">
+                    <p class="month-info">Fotos del año 2019, cuando te fuiste y te veia poco.</p>
+                    <div class="row g-3">
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2019/IMG-20190713-WA0018.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2019/IMG-20190713-WA0018.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2019/IMG-20190713-WA0022.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 2" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2019/IMG-20190713-WA0022.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2019/IMG-20190713-WA0023.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 3" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2019/IMG-20190713-WA0023.jpg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenido del 2020-->
+                <div class="tab-pane fade" id="pills-mes3" role="tabpanel" aria-labelledby="pills-mes3-tab">
+                    <p class="month-info">Año 2020 me tuve que conformar con capturas de tus perfil de Whatsapp</p>
+                    <div class="row g-3">
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2020/IMG-20201107-WA0034.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2020/IMG-20201107-WA0034.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2020/Screenshot_2020-08-09-19-29-40-557_com.whatsapp.jpg"
+                                loading="lazy" class="img-fluid gallery-image" alt="Imagen 2" data-bs-toggle="modal"
+                                data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2020/Screenshot_2020-08-09-19-29-40-557_com.whatsapp.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2020/Screenshot_2020-08-09-21-25-29-714_com.whatsapp.jpg"
+                                loading="lazy" class="img-fluid gallery-image" alt="Imagen 3" data-bs-toggle="modal"
+                                data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2020/Screenshot_2020-08-09-21-25-29-714_com.whatsapp.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2020/Screenshot_2020-12-14-07-40-33-065_com.whatsapp.jpg"
+                                loading="lazy" class="img-fluid gallery-image" alt="Imagen 3" data-bs-toggle="modal"
+                                data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2020/Screenshot_2020-12-14-07-40-33-065_com.whatsapp.jpg">
+                        </div>
+                    </div>
+                </div>
+                <!-- Contenido del 2023-->
+                <div class="tab-pane fade" id="pills-mes4" role="tabpanel" aria-labelledby="pills-mes4-tab">
+                    <p class="month-info">Año 2023 hablabamos poco, te perdi.</p>
+                    <div class="row g-3">
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2023/IMG-20230907-WA0008.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2023/IMG-20230907-WA0008.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2023/IMG-20230908-WA0000.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 2" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2023/IMG-20230908-WA0000.jpg">
+                        </div>
+                    </div>
+                </div>
+                <!-- Contenido del 2024-->
+                <div class="tab-pane fade" id="pills-mes5" role="tabpanel" aria-labelledby="pills-mes5-tab">
+                    <p class="month-info">Año 2024 volvimos a vernos y frecuentar mas.</p>
+                    <div class="row g-3">
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG-20240519-WA0001.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 1" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG-20240519-WA0001.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG-20240519-WA0002.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 2" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG-20240519-WA0002.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG-20240519-WA0005.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 3" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG-20240519-WA0005.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG-20240524-WA0020.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 4" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG-20240524-WA0020.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG-20240524-WA0023.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 5" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG-20240524-WA0023.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG-20240528-WA0022.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 6" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG-20240528-WA0022.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240419_172446.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 7" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240419_172446.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240509_134430.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 8" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240509_134430.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240509_155239.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 9" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240509_155239.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240509_155244.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 10" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240509_155244.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240509_160029.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 11" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240509_160029.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240509_164142.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 12" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240509_164142.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240509_165642.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 13" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240509_165642.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240509_165724.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 14" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240509_165724.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240509_165734.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 15" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240509_165734.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240509_165956.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 16" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240509_165956.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240509_170007.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 17" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240509_170007.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240509_184051.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 18" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240509_184051.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240518_190242.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 19" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240518_190242.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240518_190245.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 20" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240518_190245.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240518_190250.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 21" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240518_190250.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240518_190307.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 22" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240518_190307.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240525_182045.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 23" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240525_182045.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240525_182153.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 24" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240525_182153.jpg">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img src="assets/imagenes/2024/IMG_20240525_182747.jpg" class="img-fluid gallery-image"
+                                loading="lazy" alt="Imagen 25" data-bs-toggle="modal" data-bs-target="#imageModal"
+                                data-bs-src="assets/imagenes/2024/IMG_20240525_182747.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nueva sección: Mapa de Recuerdos -->
+    <section class="map-section hidden">
+        <div class="container">
+            <h2 class="map-title">Mapa de Recuerdos</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Tarjeta 1: Cine de terror (primer encuentro) -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="memory-card">
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="fas fa-map-marker-alt location-icon" aria-hidden="true"></i>
+                            <div>
+                                <h4 class="card-title">Encuentro en el cine</h4>
+                                <p class="card-description">Fuimos al Cine Center a ver una peli de terror; fue nuestro
+                                    primer encuentro.</p>
+                            </div>
+                        </div>
+                        <p class="card-date ms-4">19 de abril de 2024</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Ricono (alcance) -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="memory-card">
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="fas fa-map-marker-alt location-icon" aria-hidden="true"></i>
+                            <div>
+                                <h4 class="card-title">Te alcancé en Ricono</h4>
+                                <p class="card-description">Fui a darte alcance en Ricono, volvimos en tren.</p>
+                            </div>
+                        </div>
+                        <p class="card-date ms-4">25 de mayo de 2024</p>
+                    </div>
+                </div>
+                <!-- Tarjeta 4: Feria en la universidad -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="memory-card">
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="fas fa-map-marker-alt location-icon" aria-hidden="true"></i>
+                            <div>
+                                <h4 class="card-title">Tu feria en la U</h4>
+                                <p class="card-description">Fui a verte a tu feria, estabas cansada pero te fue bien;
+                                    por
+                                    un rato sentí que éramos algo más, y ese recuerdo se quedó conmigo.</p>
+                            </div>
+                        </div>
+                        <p class="card-date ms-4">09 de mayo de 2024</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Pizza en Quillacollo -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="memory-card">
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="fas fa-map-marker-alt location-icon" aria-hidden="true"></i>
+                            <div>
+                                <h4 class="card-title">Pizza en Quillacollo</h4>
+                                <p class="card-description">Salimos a comer pizza en una pizzería de Quillacollo; fue un
+                                    día bonito que nunca olvidare.</p>
+                            </div>
+                        </div>
+                        <p class="card-date ms-4">18 de mayo de 2024</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4: Pizza en Quillacollo -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="memory-card">
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="fas fa-map-marker-alt location-icon" aria-hidden="true"></i>
+                            <div>
+                                <h4 class="card-title">Pizzaa despues de un año sin vernos</h4>
+                                <p class="card-description">Me contaste tu dia de talentos, estuvo bonito, despues
+                                    fuimos por una pizza.</p>
+                            </div>
+                        </div>
+                        <p class="card-date ms-4">15 de junio de 2025</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Nueva sección: Datos Curiosos de Belén (Carrusel de mensajes) -->
+    <section class="curious-facts-section hidden">
+        <div class="container">
+            <h2 class="curious-facts-title">Datos Curiosos de Belén</h2>
+
+            <!-- Nuevo carrusel con el diseño de la imagen -->
+            <div id="customCarouselDatosCuriosos" class="carousel slide" data-bs-ride="carousel">
+                <div class="custom-carousel-container">
+                    <div class="carousel-inner custom-carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="custom-carousel-item">
+                                Con solo delinearse los ojos ya enamora.
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="custom-carousel-item">
+                                Tiene una voz hermosa, canta increible.
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="custom-carousel-item">
+                                Le encanta la pizza
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="custom-carousel-item">
+                                Es una chica sencilla pero increible.
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="custom-carousel-item">
+                                Le encanta bailar.
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="custom-carousel-item">
+                                Sueña con formar una familia.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controles de navegación del carrusel (flechas) -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#customCarouselDatosCuriosos"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#customCarouselDatosCuriosos"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+                <!-- Indicadores del carrusel (los "redonditos") -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#customCarouselDatosCuriosos" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#customCarouselDatosCuriosos" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#customCarouselDatosCuriosos" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#customCarouselDatosCuriosos" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#customCarouselDatosCuriosos" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#customCarouselDatosCuriosos" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <!-- Asegúrate de añadir un botón por cada .carousel-item que tengas -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nueva sección: Tiempo Juntos Como Novios -->
+    <section class="time-together-section hidden">
+        <div class="container">
+            <h2 class="time-together-title">Tiempo Juntos Como Novios</h2>
+            <div class="time-together-card">
+                <i class="fas fa-heart heart-icon"></i>
+                <p class="date-text">No somos novios aun pero muy pronto este contador empezara a contar los dias. </p>
+                <div class="time-together-grid">
+                    <div class="time-together-item">
+                        <span class="countdown-number" id="days">0</span>
+                        <span class="countdown-label">Días</span>
+                    </div>
+                    <div class="time-together-item">
+                        <span class="countdown-number" id="hours">0</span>
+                        <span class="countdown-label">Horas</span>
+                    </div>
+                    <div class="time-together-item">
+                        <span class="countdown-number" id="minutes">0</span>
+                        <span class="countdown-label">Minutos</span>
+                    </div>
+                    <div class="time-together-item">
+                        <span class="countdown-number" id="seconds">0</span>
+                        <span class="countdown-label">Segundos</span>
+                    </div>
+                </div>
+                <p class="time-together-quote">"Cada segundo a tu lado me hará feliz"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nueva sección: Nuestros Objetivos -->
+    <section class="objectives-section hidden">
+        <div class="container">
+            <h2 class="objectives-title">Nuestros Objetivos</h2>
+
+            <!-- Tarjeta de Objetivo Principal -->
+            <div class="main-objective-card">
+                <i class="fas fa-heart heart-icon my-2 "></i>
+                <span class="objective-label">OBJETIVO PRINCIPAL</span>
+                <h3 class="objective-title">Formar una familia y tener nuestro hijo e hija</h3>
+                <p class="objective-status">
+                    <i class="fas fa-clock icon"></i> Pendiente - El sueño más grande
+                </p>
+            </div>
+
+            <!-- Cuadrícula de Objetivos Secundarios -->
+            <div class="objectives-grid">
+                <!-- Objetivo 1: Ser novios (Cumplido) -->
+                <div class="objective-card completed">
+                    <div class="status-line">
+                        <i class="fas fa-check-circle status-icon completed"></i>
+                        <span class="status-text completed">CUMPLIDO</span>
+                    </div>
+                    <h4 class="card-title">Conocernos</h4>
+                    <p class="card-description">Lo mas importante</p>
+                    <p class="card-date-emoji">hace muchos años✨</p>
+                </div>
+                <!-- Objetivo 2: Ser novios-->
+                <div class="objective-card pending">
+                    <div class="status-line">
+                        <i class="fas fa-clock status-icon pending"></i>
+                        <span class="status-text pending">PENDIENTE</span>
+                    </div>
+                    <h4 class="card-title">Ser novios</h4>
+                    <p class="card-description">El dia mas feliz de mi vida ❤️</p>
+                </div>
+                <!-- Objetivo 5: Tener un perro golden (Pendiente) -->
+                <div class="objective-card pending">
+                    <div class="status-line">
+                        <i class="fas fa-clock status-icon pending"></i>
+                        <span class="status-text pending">PENDIENTE</span>
+                    </div>
+                    <h4 class="card-title">Darnos nuestro primer beso</h4>
+                    <p class="card-description">La sensacion mas hermosa. 😘</p>
+                </div>
+                <!-- Objetivo 3: Casarnos (Pendiente) -->
+                <div class="objective-card pending">
+                    <div class="status-line">
+                        <i class="fas fa-clock status-icon pending"></i>
+                        <span class="status-text pending">PENDIENTE</span>
+                    </div>
+                    <h4 class="card-title">Casarnos</h4>
+                    <p class="card-description">El día más especial 💍</p>
+                </div>
+                <!-- Objetivo 2: Viajar juntos (Pendiente) -->
+                <div class="objective-card pending">
+                    <div class="status-line">
+                        <i class="fas fa-clock status-icon pending"></i>
+                        <span class="status-text pending">PENDIENTE</span>
+                    </div>
+                    <h4 class="card-title">Viajar juntos</h4>
+                    <p class="card-description">Conocer lugares nuevos ✈️</p>
+                </div>
+
+                <!-- Objetivo 3: Vivir juntos (Pendiente) -->
+                <div class="objective-card pending">
+                    <div class="status-line">
+                        <i class="fas fa-clock status-icon pending"></i>
+                        <span class="status-text pending">PENDIENTE</span>
+                    </div>
+                    <h4 class="card-title">Vivir juntos</h4>
+                    <p class="card-description">Nuestro hogar 🏠</p>
+                </div>
+
+                <!-- Objetivo 7: Tener nuestra casita (Pendiente) -->
+                <div class="objective-card pending">
+                    <div class="status-line">
+                        <i class="fas fa-clock status-icon pending"></i>
+                        <span class="status-text pending">PENDIENTE</span>
+                    </div>
+                    <h4 class="card-title">Tener nuestra casita</h4>
+                    <p class="card-description">Donde vivamos felices 👨‍👩‍👧‍👦</p>
+                </div>
+            </div>
+
+            <p class="objectives-quote">"Cada objetivo cumplido nos acerca más a nuestros sueños juntos"</p>
+        </div>
+    </section>
+
+    <!-- Nueva sección: Cartas -->
+    <section class="letters-section hidden">
+        <h2 class="letters-title">Cartas</h2>
+        <p class="letters-subtitle">Cree este apartado porque se que te encantan las cartas</p>
+        <p class="letters-date-info">La primera carta para ti❤️.</p>
+        <div class="letter-card">
+            <i class="fas fa-heart heart-icon"></i>
+            <div class="letter-content">
+                <p style="color: #E74C3C; font-weight: 600; font-size: 1.1rem;">Chinita,</p>
+
+                <p>Te conozco desde el colegio, y desde entonces algo en mí empezó a cambiar sin que yo supiera cómo
+                    ponerle nombre. Te he llevado en el pecho por mucho tiempo, y cada día que pasa me doy cuenta de que
+                    lo que siento no es pasajero: te has ganado mi corazón con tu risa, tu presencia, tu forma de
+                    compartir las cosas, incluso las difíciles.</p>
+
+                <p>Lo que más quiero es que seas feliz. Eso está por encima de todo. Si en algún momento no sientes lo
+                    mismo, lo entiendo; no quiero apurar nada. Confío en que con el tiempo, si estamos cerca, tal vez
+                    ese sentimiento crezca. Mientras tanto, yo me comprometo a seguir trabajando en mí, a mejorar por
+                    vos, a ser alguien que te apoye, que te escuche y que esté presente cuando lo necesites.</p>
+
+                <p>Quiero que caminemos juntos en nuestras metas, que nos empujemos, que celebremos cada logro y que
+                    aprendamos de lo que no sale. Tu compañía me hace mejor persona, me impulsa, y me da paz. Tenerte
+                    cerca es un regalo que no doy por hecho.</p>
+
+                <p>Siempre te voy a querer. No es solo una promesa bonita: es una intención de vida. Voy a cuidar lo que
+                    hay entre nosotros con respeto y con ganas de construir algo con sentido, sin etiquetas forzadas,
+                    solo con honestidad y cariño.</p>
+
+                <p>Gracias por ser especial. Gracias por cada momento compartido. Ojalá esto también te llegue al
+                    corazón, y si aún no es tu momento, yo aquí estaré, con paciencia y con ganas de seguir escribiendo
+                    capítulos a tu lado.</p>
+            </div>
+            <span class="signature">Con todo mi amor,<br>Moises</span>
+        </div>
+
+
+        <!-- Corazones pulsantes alrededor de la sección -->
+        <i class="fas fa-heart pulsating-heart" style="top: 5%; left: 5%;"></i>
+        <i class="fas fa-heart pulsating-heart" style="top: 5%; right: 5%;"></i>
+        <i class="fas fa-heart pulsating-heart" style="bottom: 5%; left: 5%;"></i>
+        <i class="fas fa-heart pulsating-heart" style="bottom: 5%; right: 5%;"></i>
+    </section>
+
+    <!-- Nueva sección: Hecho con ❤️ -->
+    <section class="made-with-section hidden">
+        <div class="container">
+            <div class="made-with-text">
+                Hecho con <i class="fas fa-heart heart-icon"></i>
+            </div>
+            <p class="made-by-text">por Moises para Belen</p>
+            <p class="made-with-quote">"Todo fue hecho pensando en vos"</p>
+        </div>
+    </section>
+
+    <!-- Modal para mostrar la imagen en pantalla completa -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" class="img-fluid" id="modalImage" alt="Imagen en pantalla completa">
+                    <div class="modal-help-text">
+                        Click fuera de la imagen o presiona ESC para cerrar
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlace a Bootstrap JS (incluye Popper.js) para funcionalidades interactivas de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        xintegrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Tu archivo JavaScript personalizado para la funcionalidad del modal y el contador -->
+    <script src="/assets/js/app.js"></script>
+</body>
+
+</html>
